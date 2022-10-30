@@ -1,0 +1,38 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Expedition Antarctica GUI", "BloodTheme")
+
+if game.PlaceId == 2693023319 then
+
+--Main
+
+local Main = Window:NewTab("Main")
+  local MainSection = Tab:NewSection("COMING SOON")
+  
+--Teleports 
+
+local Teleport = Window:NewTab("Teleports")
+   local TeleportSection = Tab:NewSection("BaseCamp")
+   local TeleportSection = Tab:NewSection("HauntedMansion")
+   local TeleportSection = Tab:NewSection("Camp1")
+   local TeleportSection = Tab:NewSection("Camp2")
+   local TeleportSection = Tab:NewSection("Camp3")
+   local TeleportSection = Tab:NewSection("Summit")
+--Teleport Button Scripts
+BaseCamp:NewButton("Base Camp", "Teleports you back to the base camp without death!", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3980.45703125, -159.0000457763672, -34.68349838256836)
+end)
+HauntedMansion:NewButton("Haunted Mansion", "Teleports you to the spooky limited haunted mansion!", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4038.756103515625, -152.837890625, 4063.5322265625)
+end)
+Camp1:NewButton("Camp 1", "Teleports you to camp 1! Badge and pumpkin delivery.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1816.320556640625, 105.40144348144531, -155.92543029785156)
+end)
+Camp2:NewButton("Camp 2", "Teleports you to camp 2! Badge and pumpkin delivery.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6034.61767578125, 160.99996948242188, -8.542312622070312)
+end)
+Camp3:NewButton("Camp 3", "Teleports you to camp 3! Badge, crashed plane and pumpkin delivery.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9103.384765625, 436.8236389160156, 97.20106506347656)
+end)
+Summit:NewButton("Summit", "Teleports you to the summit!", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11102.2490234375, 388.99993896484375, 74.9897232055664)
+end)
