@@ -44,3 +44,19 @@ local TeleportSection = Teleport:NewSection("Limited Teleports")
   TeleportSection:NewButton("Haunted Mansion", "Teleports you to the spooky limited haunted mansion!", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4038.756103515625, -152.837890625, 4063.5322265625)
 end)
+
+--Autofarm
+
+local Autofarm = Window:NewTab("Autofarm")
+   local FarmSection = Autofarm:NewSection("Autofarm")
+     
+end
+
+--Settings
+
+local Settings = Window:NewTab("Settings")
+   local SettingsSection = Settings:NewSection(Settings)
+
+SettingsSection:NewKeybind("Toggle GUI", "Keybind to open and close the GUI.", Enum.KeyCode.LeftControl, function()
+	Library:ToggleUI()
+end)
