@@ -55,7 +55,10 @@ end
 --Settings
 
 local Settings = Window:NewTab("Settings")
-   local SettingsSection = Settings:NewSection(Settings)
+   local SettingsSection = Settings:NewSection("Settings")
+SettingsSection:NewButton("Copy Discord", "Join the discord for updates and more GUIs!", function()
+    setclipboard("https://discord.gg/6e4HN5nZYF")
+end)
 
 SettingsSection:NewKeybind("Toggle GUI", "Keybind to open and close the GUI.", Enum.KeyCode.LeftControl, function()
 	Library:ToggleUI()
